@@ -8,3 +8,4 @@ nuget FSPowerPack.Core.Community
 nuget FSPowerPack.Linq.Community
 nuget Newtonsoft.Json
 nuget System.Collections.Immutable
+nuget NATS.Client

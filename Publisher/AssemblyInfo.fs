@@ -1,4 +1,4 @@
-﻿namespace Publisher
+﻿namespace AssemblyInfo.Publisher
 open System.Reflection
 open System.Runtime.CompilerServices
 

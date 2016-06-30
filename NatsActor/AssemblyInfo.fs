@@ -1,4 +1,5 @@
-﻿namespace NatsActor
+﻿namespace AssemblyInfo.NatsActor
+
 open System.Reflection
 open System.Runtime.CompilerServices
 

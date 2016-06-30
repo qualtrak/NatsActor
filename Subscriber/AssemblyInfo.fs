@@ -1,4 +1,4 @@
-﻿namespace Subscriber
+﻿namespace AssemblyInfo.Subscriber
 open System.Reflection
 open System.Runtime.CompilerServices
 

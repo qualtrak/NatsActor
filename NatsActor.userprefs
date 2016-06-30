@@ -1,5 +1,10 @@
 ﻿<Properties StartupConfiguration="{5DE3F24C-499B-454E-979D-1997D07903C2}|Default">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Subscriber/Subscriber.fs">
+    <Files>
+      <File FileName="NatsActor/NatsActor.fs" Line="9" Column="1" />
+      <File FileName="Subscriber/Subscriber.fs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
