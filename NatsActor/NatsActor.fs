@@ -85,7 +85,7 @@
 
                 | Publish (subject, content) -> publishMessage connection subject content
 
-                | Receive what -> printfn "Server: received message: %s" what
+                | Receive what -> printfn "Actor: %s received message: %s" mailbox.Self.Path.Name what
 
                 | _ -> printfn "Invalid command in subscribed state: %A" message
 

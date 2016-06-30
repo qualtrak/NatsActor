@@ -15,12 +15,18 @@ open NatsActor
 let cf = new ConnectionFactory()
 
 let system = System.create "system" <| Configuration.load ()
-let subscriber = spawn system "subscriber" (natsActor cf)
+let subscriber1 = spawn system "subscriber1" (natsActor cf)
 
-subscriber <! Connect
-subscriber <! Subscribe "foo"
+subscriber1 <! Connect
+subscriber1 <! Subscribe "foo"
+
+let subscriber2 = spawn system "subscriber2" (natsActor cf)
+
+subscriber2 <! Connect
+subscriber2 <! Subscribe "*"
 
 let publisher = spawn system "publisher" (natsActor cf)
 
 publisher <! Connect
 publisher <! Publish ("foo", "Hello World!")
+publisher <! Publish ("bar", "Hello Again!")
