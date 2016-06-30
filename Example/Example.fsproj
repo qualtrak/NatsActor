@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F619A792-E847-44DD-B189-E677DE086362}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Subscriber</RootNamespace>
-    <AssemblyName>Subscriber</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ProjectGuid>{1CF2875B-0C19-4E9E-8AA7-246E53B46115}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Example</RootNamespace>
+    <AssemblyName>Example</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -16,7 +16,6 @@
     <OutputPath>bin\Debug</OutputPath>
     <DefineConstants>DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <ExternalConsole>true</ExternalConsole>
     <PlatformTarget>
     </PlatformTarget>
   </PropertyGroup>
@@ -26,7 +25,6 @@
     <DefineConstants>
     </DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <ExternalConsole>true</ExternalConsole>
     <GenerateTailCalls>true</GenerateTailCalls>
     <PlatformTarget>
     </PlatformTarget>
@@ -45,17 +43,13 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssemblyInfo.fs" />
-    <Compile Include="Subscriber.fs" />
+    <Compile Include="Example.fsx" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NatsActor\NatsActor.fsproj">
       <Project>{724F90AB-AA61-4EFD-9206-04DB3216B818}</Project>
       <Name>NatsActor</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="paket.references" />
   </ItemGroup>
   <Import Project="$(FSharpTargetsPath)" />
   <UsingTask TaskName="CopyRuntimeDependencies" AssemblyFile="..\.paket\paket.exe" />

@@ -7,6 +7,18 @@ Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Publisher", "Publisher\Publ
 EndProject
 Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Subscriber", "Subscriber\Subscriber.fsproj", "{F619A792-E847-44DD-B189-E677DE086362}"
 EndProject
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Example", "Example\Example.fsproj", "{1CF2875B-0C19-4E9E-8AA7-246E53B46115}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ECF8D290-6D61-49E5-BF46-6F98F6712472}"
+	ProjectSection(SolutionItems) = preProject
+		startNatsServer.sh = startNatsServer.sh
+		README.md = README.md
+		build.fsx = build.fsx
+		build.sh = build.sh
+		paket.dependencies = paket.dependencies
+		paket.lock = paket.lock
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,5 +37,9 @@ Global
 		{F619A792-E847-44DD-B189-E677DE086362}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F619A792-E847-44DD-B189-E677DE086362}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F619A792-E847-44DD-B189-E677DE086362}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CF2875B-0C19-4E9E-8AA7-246E53B46115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CF2875B-0C19-4E9E-8AA7-246E53B46115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CF2875B-0C19-4E9E-8AA7-246E53B46115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CF2875B-0C19-4E9E-8AA7-246E53B46115}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

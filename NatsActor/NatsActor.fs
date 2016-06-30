@@ -7,17 +7,16 @@
     open System.Text
     open System.Threading
 
-    type Payload = string
     type MessageContent = string
     type Subject = string
 
     type QueueCommand = 
-        | Connect
-        | Disconnect
-        | Subscribe of Subject
-        | Unsubscribe
-        | Publish of Subject * MessageContent
-        | Receive of Payload
+        | Connect // Connect to Nats server
+        | Disconnect // Disconnect from server
+        | Subscribe of Subject // Subscribe to message tagged with 'Subject'
+        | Unsubscribe // Unsubscribe
+        | Publish of Subject * MessageContent // Publish message with tag 'Subject'
+        | Receive of MessageContent // Receive message
 
     let natsActor (factory : ConnectionFactory) (mailbox: Actor<_>) =
 
