@@ -3,6 +3,7 @@ layout: post
 title: Exploring the publish-subscribe pattern with NATS and F# based Akka.NET actors
 ---
 
+https://seroter.wordpress.com/2016/05/16/modern-open-source-messaging-apache-kafka-rabbitmq-and-nats-in-action/
 
 insert drawing
 
