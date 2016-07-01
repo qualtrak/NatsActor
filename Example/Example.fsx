@@ -30,3 +30,10 @@ let publisher = spawn system "publisher" (natsActor cf)
 publisher <! Connect
 publisher <! Publish ("foo", "Hello World!")
 publisher <! Publish ("bar", "Hello Again!")
+
+subscriber2 <! Disconnect
+publisher <! Publish ("foo", "Goodbye!")
+
+subscriber1 <! Disconnect
+publisher <! Publish ("foo", "Goodbye Again!")
+publisher <! Disconnect
