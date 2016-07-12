@@ -7,7 +7,7 @@ open System.IO
 
 // Directories
 let curDir = Directory.GetCurrentDirectory()
-let appDir = "build/src/"
+let appDir = "./build"
 
 // Filesets
 let appReferences = !! "**/*.fsproj"
